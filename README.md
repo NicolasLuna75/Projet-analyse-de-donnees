@@ -1,18 +1,28 @@
 # Projet analyse de données
 
+<br>
+
 DURAND ALexis, PIERRECY Etienne, LUNA Nicolas  
 M1 APE MPE
 
+<br>
+
 ## I. Génèse
+
 
 Pour notre projet, nous avons souhaité automatiser le calcul de la rentabilité de l'achat d'un bien immobilier qui serait mis en location.
 Pour ce faire, nous avons déscéder de combiner l'utilisation d'un formulaire que remplirait l'investisseur avec le scrapping automatique des informations d'une annonce immobillière du site ouestfrance-immo.com pour laquelle l'investisseur voudrais établir sa rentabilité en location.
 Aussi, pour faire nos calculs, nous avons chargé la base de donnée des informations des taux de taxe foncière des communes françaises.
 
-  
+<br>
+
 ## II. Description du code
 
+<br>
+
 *(nota bene : cette section (II) est uniquement descriptive, la section qui explique l'uitlisation du code (III) arrive juste après. De plus, un dictionnaire des donnée est disponible en fin de document (IV))*
+
+<br>
 
 * Première partie :
 
@@ -50,9 +60,11 @@ Cette partie sert à calculer les différentes rentabilité de l'investissement 
 
 La dernière partie du code vise à créer une fenêntre affichant les différents résultats calculés dans les parties précédentes.
 
+<br>
+
 ## III. Utilisation du code
 
-
+<br>
 
 ## IV. Dictionnaire des données
 
