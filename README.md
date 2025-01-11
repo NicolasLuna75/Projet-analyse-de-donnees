@@ -23,7 +23,15 @@ La première partie vise à charger toutes les librairies nécessaires ainsi que
 Cette partie vise à établir le formulaire et à le lancer.  
 Elle établie aussi la tableau *form_scrap_data* qui regroupera toutes les informations nécessaires aux différents  calculs.
 
+* Troisième partie :
+
+Cette partie concerne le scraping de l'annonce immobilière. Le scraping nous permet ici de récuperer le prix du bien et le prix au mètre carré, avec lesquels on en déduit la surface. Ces trois éléments sont inétégrés à *form_scrap_data*. Le code permet aussi de s'assurer de ne prendre que les chiffres, sans les symboles et les espaces, sans quoi il est impossible de les convertir en numérique. De même, avec cette partie du code, on s'assure que le texte de la ville apparaisse dans le tableau en majuscule et sans accent pour se conformer à la typologie de la base de donnée de la taxe foncière.
+
 *(nota bene : pour que notre code fonctionne, il est imparatif d'utiliser l'url d'une annonce immobilière provenant du site ouestfrance-immo (https://www.ouestfrance-immo.com))*
+
+* Quatrième partie :
+
+Cette partie que nous avons appelé *assignation* a pour but de créer les variables utiles aux calculs, qui reprennent dans leur détermination les données du tableau *form_scrap_data*. 
 
 
 ## III. Utilisation du code
@@ -69,6 +77,8 @@ Les autres variables :
 * rentabilité_K_investis_totale_annuel :
 * rentabilite_brute :
 * rentabilite_nette :
+
+
 
 
 
