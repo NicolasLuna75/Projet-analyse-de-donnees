@@ -33,6 +33,22 @@ Cette partie concerne le scraping de l'annonce immobilière. Le scraping nous pe
 
 Cette partie que nous avons appelé *assignation* a pour but de créer les variables utiles aux calculs, qui reprennent dans leur détermination les données du tableau *form_scrap_data*. 
 
+* Cinquième partie :
+*********************************************************************************
+Cette partie contient deux boucles pour déterminer la somme des résultats actualisés et capitalisés. les résultats capitalisés correspondent aux excédentx mensuelx (résultat mensuel > 0) placés et rémunérés au taux de placement défini dans le formulaire. La somme des résultats actualisés correspond à la situation où les résultats mensuels sont négatifs, et donc où le montant d'argent comblant les pertes est actualisé à la période de l'apport.
+*********************************************************************************
+
+* Sixième partie :
+
+Cette partie vise à créer le tableau d'amortissement de l'emprunt, qui sera disponible au téléchargement dans la fenêtre de fin qui rend compte des résultats.
+
+* Septième partie :
+
+Cette partie sert à calculer les différentes rentabilité de l'investissement immobilier.
+
+* Huitième partie :
+
+La dernière partie du code vise à créer une fenêntre affichant les différents résultats calculés dans les parties précédentes.
 
 ## III. Utilisation du code
 
