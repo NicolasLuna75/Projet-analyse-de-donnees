@@ -8,7 +8,7 @@ run_script <- function() {
     }
   }
   
-  install_if_needed_multiple(c("openxlsx", "tcltk"))
+  install_if_needed_multiple(c("openxlsx", "tcltk", "tidyverse", "rvest", "readxl", "stringi", "crayon"))
   
   library(tcltk)
   library(tidyverse)
@@ -38,30 +38,30 @@ run_script <- function() {
     page <- read_html(url)
     
     prix <- page %>%
-      html_element(".detail-prix") %>%  # Sélectionner l'élément contenant le prix
+      html_element(".detail-prix") %>%  
       html_text(trim = TRUE) %>%
-      str_extract("[0-9]+(?:[\\s][0-9]+)*") %>%  # Extraire le nombre avec espaces
-      str_replace_all("\\s", "")  # Supprimer les espaces pour obtenir un nombre entier
+      str_extract("[0-9]+(?:[\\s][0-9]+)*") %>%  
+      str_replace_all("\\s", "")  
     
     prix_m2 <- page %>%
-      html_elements(".detail-prix__prix-m2") %>%  # Cibler l'élément contenant le prix au m²
-      html_text(trim = TRUE) %>%  # Extraire le texte
-      str_extract("[0-9\\s]+") %>%  # Extraire uniquement les chiffres et espaces
-      str_replace_all("\\s", "") # Nettoyer les espaces inutiles
+      html_elements(".detail-prix__prix-m2") %>%  
+      html_text(trim = TRUE) %>%  
+      str_extract("[0-9\\s]+") %>%  
+      str_replace_all("\\s", "") 
     
     prix_m2 <- prix_m2[1]
     
     texte <- page %>%
       html_elements(".detail-annonces-similaires__title") %>%
       html_text(trim = TRUE) %>%
-      str_extract("(?<=à ).*")  # Extraire tout après "à" avec lookbehind
+      str_extract("(?<=à ).*")  
     
     texte_sans_accent_majuscule <- stri_trans_general(str_to_upper(texte), "Latin-ASCII")
     
-    form_scrap_data$prix <- as.numeric(prix)  # Convertir en numérique
+    form_scrap_data$prix <- as.numeric(prix)  
     form_scrap_data$prix_m2 <- as.numeric(prix_m2)
-    form_scrap_data$surface_habitable <- as.numeric(prix) / as.numeric(prix_m2)  # Calcul de la surface
-    form_scrap_data$ville <- texte_sans_accent_majuscule  # Assignation des villes
+    form_scrap_data$surface_habitable <- as.numeric(prix) / as.numeric(prix_m2)  
+    form_scrap_data$ville <- texte_sans_accent_majuscule  
     
     tx_tf <- tax_fonc$taux[tax_fonc$commune == form_scrap_data$ville]/100
     loyer_m <- form_scrap_data$plocm2*form_scrap_data$surface_habitable
@@ -203,14 +203,14 @@ run_script <- function() {
   }
   
   
-  # Créer une fonction pour afficher le formulaire
+  
   formulaire_tcltk <- function() {
-    # Créer une fenêtre pour le formulaire
+    
     win <- tktoplevel()
     tkwm.title(win, "Formulaire")
-    tkconfigure(win, bg = "#f4f4f4")  # Couleur d'arrière-plan
+    tkconfigure(win, bg = "#f4f4f4")  
     
-    # Variables pour stocker les données
+    
     url <- tclVar("")
     plocm2 <- tclVar("")
     pventem2 <- tclVar("")
@@ -220,9 +220,9 @@ run_script <- function() {
     apport <- tclVar("")
     txplacement <- tclVar("")
     
-    # Fonction pour enregistrer les données dans un data.frame
+    
     enregistrer_donnees <- function() {
-      # Créer un data.frame avec les valeurs du formulaire
+     
       form_scrap_data <- data.frame(
         url = tclvalue(url),
         plocm2 = as.numeric(gsub(",", ".", tclvalue(plocm2))),
@@ -235,19 +235,19 @@ run_script <- function() {
         stringsAsFactors = FALSE
       )
       
-      # Assigner le data frame dans l'environnement global
+      
       assign("form_scrap_data", form_scrap_data, envir = .GlobalEnv)
       
-      tkdestroy(win)  # Fermer la fenêtre du formulaire après soumission
+      tkdestroy(win)  
     }
     
-    # Ajouter un titre
+    
     tkgrid(
       tklabel(win, text = "Formulaire d'Analyse Immobilière", font = "Helvetica 16 bold", bg = "#f4f4f4", fg = "#333"),
       pady = 20
     )
     
-    # Créer les éléments du formulaire
+    
     champs <- list(
       "Url de l'annonce :" = url,
       "Prix de location au mètre carré :" = plocm2,
@@ -267,7 +267,7 @@ run_script <- function() {
       )
     }
     
-    # Créer un bouton pour soumettre les données
+    
     tkgrid(
       tkbutton(win, text = "Valider", command = function(){
         enregistrer_donnees()
@@ -275,11 +275,11 @@ run_script <- function() {
       pady = 20
     )
     
-    # Afficher le formulaire
+    
     tkwait.window(win)
   }
   
-  # Lancer le formulaire
+ 
   formulaire_tcltk()
   
 }
