@@ -86,15 +86,20 @@ Pour gagner du temps, voici une annonce et les informations du fomulaires que vo
 
 <br>
 
-Pour le formulaire:
-* url : url de l'annonce immobilière
-* Prix de location au mètre carré : celui que l'investisseur souhaitera appliquer
-* prix de revente espéré au mètre carré : celui que souhaite l'investisseur (attention, ce n'est pas le prix d'achat du bien immobilier, celui-ci étant récupéré automatiquement)
-* Prix des travaux de rénovation : si l'investisseur souhaite en réaliser, inscrire 0 s'il ne souhaite pas
-* Taux de placement : taux d'intérêt si l'investisseur placait son apport plutôt que d'investir dans le bien immobilier
+### **Pour le formulaire:**
+| **Arguments**                        | **Description**                                                                                   |
+|--------------------------------------|---------------------------------------------------------------------------------------------------|
+| **URL**                              | URL de l'annonce immobilière                                                                    |
+| **Prix de location au mètre carré**  | Celui que l'investisseur souhaitera appliquer                                                   |
+| **Prix de revente espéré au mètre carré** | Celui que souhaite l'investisseur (attention, ce n'est pas le prix d'achat du bien immobilier, celui-ci étant récupéré automatiquement) |
+| **Prix des travaux de rénovation**   | Si l'investisseur souhaite en réaliser, inscrire 0 s'il ne souhaite pas                         |
+| **Taux de placement**                | Taux d'intérêt si l'investisseur plaçait son apport plutôt que d'investir dans le bien immobilier|
 
 
-Les autres variables :
+<br>
+
+
+### **Les autres variables :**
 * tax_fonc : dataframe des taux de taxe foncière
 * plocm2 : prix de location au m²
 * pventem2 : prix de revente espéré au m²
