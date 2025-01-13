@@ -77,7 +77,7 @@ run_script <- function() {
     
     act <- 0
     for (i in 1:duree_emprunt) {
-      act <- act + resultat_mensuel * (1 + txpm)^(duree_emprunt - i)
+      act <- act + resultat_mensuel * (1 + 0.02/12)^(duree_emprunt - i)
     }
     
     cap <- 0
