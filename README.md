@@ -24,39 +24,39 @@ Aussi, pour faire nos calculs, nous avons chargé la base de données des inform
 
 <br>
 
-* Première partie :
+* **Première partie :**
 
 La première partie vise à charger toutes les librairies nécessaires ainsi que la base de données des taux de taxe foncière.
 
-* Seconde partie :
+* **Seconde partie :**
 
 Cette partie vise à établir le formulaire et à le lancer.  
 Elle établie aussi la tableau *form_scrap_data* qui regroupera toutes les informations nécessaires aux différents calculs.
 
-* Troisième partie :
+* **Troisième partie :**
 
 Cette partie concerne le scraping de l'annonce immobilière. Le scraping nous permet ici de récuperer le prix du bien et le prix au mètre carré, avec lesquels on déduit la surface. Ces trois éléments sont inétégrés à *form_scrap_data*. Le code permet aussi de s'assurer de ne prendre que les chiffres, sans les symboles et les espaces, sans quoi il est impossible de les convertir en numérique. De même, avec cette partie du code, on s'assure que le texte de la ville apparaisse dans le tableau en majuscule et sans accent pour se conformer à la typologie de la base de donnée de la taxe foncière.
 
 *(nota bene : pour que notre code fonctionne, il est imparatif d'utiliser l'url d'une annonce immobilière provenant du site ouestfrance-immo (https://www.ouestfrance-immo.com))*
 
-* Quatrième partie :
+* **Quatrième partie :**
 
 Cette partie que nous avons appelé *assignation* a pour but de créer les variables utiles aux calculs, qui sont calculées à partir des données du tableau *form_scrap_data*. 
 
-* Cinquième partie :
+* **Cinquième partie :**
 *********************************************************************************
 Cette partie contient deux boucles pour déterminer la somme des résultats actualisés et capitalisés. les résultats capitalisés correspondent aux excédents mensuels (résultat mensuel > 0) placés et rémunérés au taux de placement défini dans le formulaire. La somme des résultats actualisés correspond à la situation où les résultats mensuels sont négatifs, et donc où le montant d'argent comblant les pertes est actualisé à la période de l'apport.
 *********************************************************************************
 
-* Sixième partie :
+* **Sixième partie :**
 
 Cette partie vise à créer le tableau d'amortissement de l'emprunt, qui sera disponible au téléchargement dans la fenêtre qui rend compte des résultats.
 
-* Septième partie :
+* **Septième partie :**
 
 Cette partie sert à calculer les différentes rentabilités de l'investissement immobilier.
 
-* Huitième partie :
+* **Huitième partie :**
 
 La dernière partie du code vise à créer une fenêntre affichant les différents résultats calculés dans les parties précédentes.
 
