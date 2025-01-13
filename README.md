@@ -86,7 +86,7 @@ Pour gagner du temps, voici une annonce et les informations du fomulaires que vo
 
 <br>
 
-### **Pour le formulaire:**
+### **Formulaire :**
 | **Arguments**                        | **Description**                                                                                   |
 |--------------------------------------|---------------------------------------------------------------------------------------------------|
 | **URL**                              | URL de l'annonce immobilière                                                                    |
@@ -99,7 +99,7 @@ Pour gagner du temps, voici une annonce et les informations du fomulaires que vo
 <br>
 
 
-### **Les autres variables :**
+### **Autres variables :**
 * tax_fonc : dataframe des taux de taxe foncière
 * plocm2 : prix de location au m²
 * pventem2 : prix de revente espéré au m²
