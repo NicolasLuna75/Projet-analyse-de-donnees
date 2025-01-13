@@ -101,7 +101,7 @@ Les autres variables :
 * resultat_mensuel : bénéfice ou perte de la mise en location du bien
 * txpm : taux de placement mensuel
 * rentabilite_des_K_investis_totale : rentabilité de l'opération pour la durée du crédit sur les capitaux investis
-* rentabilite_K_investis_totale_pourcent : "rentabilite_des_K_investis_totale" multipliée par 100 et arrondie à deux chiffres après la virgule pour être afficher dans la fenêtre des résultats
+* rentabilite_K_investis_totale_pourcent : "rentabilite_des_K_investis_totale" multipliée par 100 et arrondie à deux chiffres après la virgule pour être affichée dans la fenêtre des résultats
 * rentabilité_K_investis_totale_annuel : "rentabilite_K_investis_totale_pourcent" annualisée
 * rentabilite_brute : loyer annuel sur le prix du bien
 * rentabilite_nette : loyer annuel moins les différentes charges sur le prix du bien
