@@ -9,7 +9,7 @@
 - [IV. Dictionnaire des données](#iv-dictionnaire-des-données)
  
 ---
-DURAND ALexis, PIERRECY Etienne, LUNA Nicolas  
+DURAND Alexis, PIERRECY Etienne, LUNA Nicolas  
 M1 APE MPE
 
 <br>
