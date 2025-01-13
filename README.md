@@ -55,6 +55,23 @@ S'ouvre alors le formulaire dans une nouvelle fenêtre. ATTENTION : la fenêtre 
 Remplissage du formulaire : dans la rublique : 
 * "Url de l'annonce" : renseigner l'url de l'annonce ;  
 * "Prix de location au mètre carré" : prix que l'investisseur à lui-même défini avec sa connaissance du marché ;
+* "Prix de revente espéré au mètre carré" : prix que l'investisseur à lui-même défini avec sa connaissance du marché ;
+* "Prix des travaux de rénovation" : montant des travaux si l'investisseur souhaite en réaliser (inscrire 0 sinon) ;
+* "Durée du crédit (en année)" : nombre d'annuités de l'emprunt ;
+* "Taux du crédit" : taux auquel l'investisseur emprunte, le calcul des intérêts se fait ici via la méthode des annuités constantes ;
+* "Apport pour cet achat" : apport fait par l'investisseur lors de la souscription de l'emprunt ;
+* "Taux de placement espéré" : taux de placement des bénéfices mensuels (s'ils sont positifs) réinvestis.
+
+Pour gagner du temps, voici une annonce et les informations du fomulaires que vous pouvez utiliser :
+
+"Url de l'annonce" : https://www.ouestfrance-immo.com/immobilier/vente/maison/saint-jean-d-angely-17-17347/18494638.htm  
+"Prix de location au mètre carré" : 10  
+"Prix de revente espéré au mètre carré" : 1800  
+"Prix des travaux de rénovation" : 10000  
+"Durée du crédit (en année)" : 20  
+"Taux du crédit" : 2.70  
+"Apport pour cet achat" : 30000  
+"Taux de placement espéré" : 2,75
 
 <br>
 
