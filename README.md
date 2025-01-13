@@ -11,7 +11,7 @@ M1 APE MPE
 
 
 Pour notre projet, nous avons souhaité automatiser le calcul de la rentabilité de l'achat d'un bien immobilier qui serait mis en location.
-Pour ce faire, nous avons décider de combiner l'utilisation d'un formulaire que remplirait l'investisseur avec le scraping automatique des informations d'une annonce immobilière du site ouestfrance-immo.com pour laquelle l'investisseur voudrait établir sa rentabilité en location.
+Pour ce faire, nous avons décider de combiner l'utilisation d'un formulaire que remplirait l'investisseur avec le scraping automatique des informations d'une annonce immobilière du site Ouestfrance-immo.com pour laquelle l'investisseur voudrait établir sa rentabilité en location.
 Aussi, pour faire nos calculs, nous avons chargé la base de données des informations des taux de taxe foncière des communes françaises.
 
 <br>
@@ -35,17 +35,17 @@ Elle établie aussi la tableau *form_scrap_data* qui regroupera toutes les infor
 
 * **Troisième partie :**
 
-Cette partie concerne le scraping de l'annonce immobilière. Le scraping nous permet ici de récuperer le prix du bien et le prix au mètre carré, avec lesquels on déduit la surface. Ces trois éléments sont inétégrés à *form_scrap_data*. Le code permet aussi de s'assurer de ne prendre que les chiffres, sans les symboles et les espaces, sans quoi il est impossible de les convertir en numérique. De même, avec cette partie du code, on s'assure que le texte de la ville apparaisse dans le tableau en majuscule et sans accent pour se conformer à la typologie de la base de donnée de la taxe foncière.
+Cette partie concerne le scraping de l'annonce immobilière. Le scraping nous permet ici de récuperer le prix du bien et le prix au mètre carré, avec lesquels on déduit la surface. Ces trois éléments sont intégrés à *form_scrap_data*. Le code permet aussi de s'assurer de ne prendre que les chiffres, sans les symboles et les espaces, sans quoi il est impossible de les convertir en numérique. De même, avec cette partie du code, on s'assure que le texte de la ville apparaisse dans le tableau en majuscule et sans accent pour se conformer à la typologie de la base de donnée de la taxe foncière.
 
-*(nota bene : pour que notre code fonctionne, il est imparatif d'utiliser l'url d'une annonce immobilière provenant du site ouestfrance-immo (https://www.ouestfrance-immo.com))*
+*(nota bene : pour que notre code fonctionne, il est imparatif d'utiliser l'url d'une annonce immobilière provenant du site Ouestfrance-immo (https://www.ouestfrance-immo.com))*
 
 * **Quatrième partie :**
 
-Cette partie que nous avons appelé *assignation* a pour but de créer les variables utiles aux calculs, qui sont calculées à partir des données du tableau *form_scrap_data*. 
+Cette partie que nous avons appelée *assignation* a pour but de créer les variables utiles aux calculs, qui sont calculées à partir des données du tableau *form_scrap_data*. 
 
 * **Cinquième partie :**
 *********************************************************************************
-Cette partie contient deux boucles pour déterminer la somme des résultats actualisés et capitalisés. les résultats capitalisés correspondent aux excédents mensuels (résultat mensuel > 0) placés et rémunérés au taux de placement défini dans le formulaire. La somme des résultats actualisés correspond à la situation où les résultats mensuels sont négatifs, et donc où le montant d'argent comblant les pertes est actualisé à la période de l'apport.
+Cette partie contient deux boucles pour déterminer la somme des résultats actualisés et capitalisés. Les résultats capitalisés correspondent aux excédents mensuels (résultat mensuel > 0) placés et rémunérés au taux de placement défini dans le formulaire. La somme des résultats actualisés correspond à la situation où les résultats mensuels sont négatifs, et donc où le montant d'argent comblant les pertes est actualisé à la période de l'apport.
 *********************************************************************************
 
 * **Sixième partie :**
