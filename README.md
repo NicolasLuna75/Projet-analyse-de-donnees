@@ -117,7 +117,7 @@ Pour gagner du temps, voici une annonce et les informations du fomulaires que vo
 * ali : assurance loyer impayé
 * tf : montant de la taxe foncière (par an)
 * apno : assurance propriétaire non-occupant
-* montant de l'emprunt
+* emprunt : montant de l'emprunt
 * ticm : taux d'intérêt mensuel de l'emprunt
 * duree_emprunt : durée de l'emprunt en mois
 * mensualite : montant du coût mensuel de l'emprunt
