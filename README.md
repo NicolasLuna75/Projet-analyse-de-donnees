@@ -2,6 +2,13 @@
 
 <br>
 
+## Sommaire
+- [I. Génèse](#i-génèse)
+- [II. Description du code](#ii-description-du-code)
+- [III. Utilisation du code](#iii-utilisation-du-code)
+- [IV. Dictionnaire des données](#iv-dictionnaire-des-données)
+ 
+---
 DURAND ALexis, PIERRECY Etienne, LUNA Nicolas  
 M1 APE MPE
 
