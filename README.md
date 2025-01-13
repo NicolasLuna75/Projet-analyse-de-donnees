@@ -26,7 +26,7 @@ Aussi, pour faire nos calculs, nous avons chargé la base de données des inform
 
 * Première partie :
 
-La première partie vise à charger toutes les librairies nécessaires ainsi que la base de donnée des taux de taxe foncière.
+La première partie vise à charger toutes les librairies nécessaires ainsi que la base de données des taux de taxe foncière.
 
 * Seconde partie :
 
@@ -41,7 +41,7 @@ Cette partie concerne le scraping de l'annonce immobilière. Le scraping nous pe
 
 * Quatrième partie :
 
-Cette partie que nous avons appelé *assignation* a pour but de créer les variables utiles aux calculs, qui sont calculés à partir des données du tableau *form_scrap_data*. 
+Cette partie que nous avons appelé *assignation* a pour but de créer les variables utiles aux calculs, qui sont calculées à partir des données du tableau *form_scrap_data*. 
 
 * Cinquième partie :
 *********************************************************************************
@@ -69,11 +69,11 @@ La dernière partie du code vise à créer une fenêntre affichant les différen
 ## IV. Dictionnaire des données
 
 Pour le formulaire:
-* url : url de l'annonce immobilière.
-* Prix de location au mètre carré : celui que l'investisseur souhaitera appliquer.
-* prix de revente espéré au mètre carré : celui que souhaite l'investisseur (attention, ce n'est pas le prix d'achat du bien immobilier, celui-ci étant récupéré automatiquement).
-* Prix des travaux de rénovation : si l'investisseur souhaite en réaliser, inscrire 0 s'il ne souhaite pas.
-* Taux de placement : taux d'intérêt si l'investisseur placait son apport plutôt que d'investir dans le bien immobilier.
+* url : url de l'annonce immobilière
+* Prix de location au mètre carré : celui que l'investisseur souhaitera appliquer
+* prix de revente espéré au mètre carré : celui que souhaite l'investisseur (attention, ce n'est pas le prix d'achat du bien immobilier, celui-ci étant récupéré automatiquement)
+* Prix des travaux de rénovation : si l'investisseur souhaite en réaliser, inscrire 0 s'il ne souhaite pas
+* Taux de placement : taux d'intérêt si l'investisseur placait son apport plutôt que d'investir dans le bien immobilier
 
 
 Les autres variables :
