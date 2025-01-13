@@ -93,7 +93,7 @@ Pour gagner du temps, voici une annonce et les informations du fomulaires que vo
 | **Prix de location au mètre carré**  | Celui que l'investisseur souhaitera appliquer                                                   |
 | **Prix de revente espéré au mètre carré** | Celui que souhaite l'investisseur (attention, ce n'est pas le prix d'achat du bien immobilier, celui-ci étant récupéré automatiquement) |
 | **Prix des travaux de rénovation**   | Si l'investisseur souhaite en réaliser, inscrire 0 s'il ne souhaite pas                         |
-| **Taux de placement**                | Taux d'intérêt si l'investisseur plaçait son apport plutôt que d'investir dans le bien immobilier|
+| **Taux de placement**                | Taux d'intérêt annuel de placement espéré par l'investisseur|
 
 
 <br>
@@ -107,7 +107,7 @@ Pour gagner du temps, voici une annonce et les informations du fomulaires que vo
 * dureecredit : durée de l'emprunt en année
 * txcredit : taux d'emprunt
 * apport : apport pour l'emprunt
-* txplacement : taux d'interêt si l'apport est investit ailleurs que dans l'emprunt
+* txplacement : taux d'interêt annuel de placement espéré par l'investisseur
 * prix : prix du bien
 * prix_m2 : prix du bien au m²
 * texte_sans_accent_majuscule : nom de la commune du bien sans accent et en majuscule
