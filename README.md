@@ -2,7 +2,7 @@
 
 <br>
 
-DURAND ALexis, PIERRECY Etienne, LUNA Nicolas  
+DURAND Alexis, PIERRECY Etienne, LUNA Nicolas  
 M1 APE MPE
 
 <br>
@@ -11,7 +11,7 @@ M1 APE MPE
 
 
 Pour notre projet, nous avons souhaité automatiser le calcul de la rentabilité de l'achat d'un bien immobilier qui serait mis en location.
-Pour ce faire, nous avons déscéder de combiner l'utilisation d'un formulaire que remplirait l'investisseur avec le scrapping automatique des informations d'une annonce immobillière du site ouestfrance-immo.com pour laquelle l'investisseur voudrais établir sa rentabilité en location.
+Pour ce faire, nous avons décider de combiner l'utilisation d'un formulaire que remplirait l'investisseur avec le scrapping automatique des informations d'une annonce immobilière du site ouestfrance-immo.com pour laquelle l'investisseur voudrait établir sa rentabilité en location.
 Aussi, pour faire nos calculs, nous avons chargé la base de donnée des informations des taux de taxe foncière des communes françaises.
 
 <br>
